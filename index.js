@@ -28,7 +28,8 @@ const mainMap = [
      {type: "diamond", checked: false}, {type: "diamond", checked: false
     }]];
 
-console.log(`Original table: ${mainMap}`);
+console.log(`Original table:`)
+console.log(mainMap);
 
 checkAround(5, 1);//input index start element
 
@@ -83,5 +84,5 @@ function checkAround(x, y) {
         }
     });
 }
-
-console.log(`Table after click: ${mainMap}`);
+console.log(`Table after click:`)
+console.log(mainMap);
