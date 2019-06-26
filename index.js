@@ -1,60 +1,36 @@
 const mainMap = [
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "diamond", checked: false}, {type: "diamond", checked: false
     }],
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "diamond", checked: false}, {type: "diamond", checked: false
     }],
     [{type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "diamond", checked: false}, {type: "diamond", checked: false
     }],
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "clubs", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "clubs", checked: false},
+     {type: "diamond", checked: false}, {type: "diamond", checked: false
     }],
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "spades", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "diamond", checked: false}, {type: "spades", checked: false
     }],
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "hearts", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "hearts", checked: false}, {type: "diamond", checked: false
     }],
     [{type: "spades", checked: false}, {type: "spades", checked: false},
-        {type: "diamond", checked: false}, {type: "diamond", checked: false},
-        {type: "diamond", checked: false}, {
-        type: "diamond", checked: false
+     {type: "diamond", checked: false}, {type: "diamond", checked: false},
+     {type: "diamond", checked: false}, {type: "diamond", checked: false
     }]];
 
+console.log(`Original table: ${mainMap}`);
 
-// console.log(mainMap);
-
-// function filter() {
-//
-// }
-//
-// const cord = {};
-// mainMap.find((row, indexY) => {
-//     if (row.find((element, indexX) => {
-//         if (element.checked === true) {
-//             cord.X = indexX;
-//             return true;
-//         }
-//     })) {cord.Y = indexY; return true;}
-// });
-
-// console.log(mainMap[1][1]);
-
-checkAround(5, 1);
+checkAround(5, 1);//input index start element
 
 function checkAround(x, y) {
     if (mainMap[x][y] === undefined) {
@@ -108,4 +84,4 @@ function checkAround(x, y) {
     });
 }
 
-console.log(mainMap);
+console.log(`Table after click: ${mainMap}`);
